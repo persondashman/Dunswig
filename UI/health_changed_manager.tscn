@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4gatat44e2as"]
+
+[ext_resource type="Script" path="res://UI/health_changed_manager.gd" id="1_h1rqj"]
+[ext_resource type="PackedScene" uid="uid://dttby7gv20mcw" path="res://UI/health_changed_label.tscn" id="2_cwe54"]
+
+[node name="HealthChangedManager" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_h1rqj")
+health_changed_label = ExtResource("2_cwe54")

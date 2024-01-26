@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpmibw73ok0s7"]
+
+[ext_resource type="Script" path="res://Levels/title_screen.gd" id="1_5h2ro"]
+
+[node name="Title_Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5h2ro")
+
+[node name="HBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -170.0
+offset_right = 170.0
+offset_bottom = 442.0
+grow_horizontal = 2
+
+[node name="Start_Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[node name="Multiplayer_Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Multiplayer"
+
+[node name="Setting_Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
+[connection signal="pressed" from="HBoxContainer/Start_Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Multiplayer_Button" to="." method="_on_multiplayer_button_pressed"]
