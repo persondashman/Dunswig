@@ -1,9 +1,0 @@
-res://Levels/2Player.tscn
-res://Character/Attack.gd
-res://Character/CharacterStateMachine.gd
-res://Levels/Game_2Player.gd
-res://Levels/test_level.tscn
-res://Character/player.tscn
-res://Character/Enemies/Snail/snail.tscn
-res://Levels/multiplayer_level.tscn
-res://Levels/title_screen.tscn
